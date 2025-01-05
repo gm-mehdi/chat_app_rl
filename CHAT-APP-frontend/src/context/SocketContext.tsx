@@ -29,7 +29,7 @@ export const SocketContextProvider = ({ children }: { children: ReactNode }) => 
 	useEffect(() => {
 		if (authUser) {
 			// Establish a socket connection
-			const socketConnection = io("https://chat-app-backend-9rvc.onrender.com", {
+			const socketConnection = io("http://localhost:8000", {
 				query: {
 					userId: authUser._id,
 				},

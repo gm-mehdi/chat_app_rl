@@ -2,9 +2,12 @@
   "name": "ch_app_rl",
   "version": "1.0.0",
   "main": "server.ts",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon CHAT-APP-backend/server.ts"
+    "server": "nodemon CHAT-APP-backend/server.ts",
+    "start" : "node CHAT-APP-backend/dist/server.js",
+    "build": "npm install && npm install --prefix CHAT-APP-frontend && npm run build --prefix CHAT-APP-frontend && npm run build --prefix CHAT-APP-backend"
   },
   "keywords": [],
   "author": "",

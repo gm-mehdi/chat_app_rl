@@ -10,7 +10,7 @@ const generateTokenAndSetCookie = (userId: any, res: any) => {
         expiresIn: '15d',
     });
 
-    res.cookie("jwte", token, {
+    res.cookie("jwt", token, {
         maxAge: 15 * 24 * 60 * 60 * 1000, //milliseconds
         httpOnly: true, //prevet XSS attacks cross-site scripting attacks
         sameSite: "strict", //CSRF attack cross-site request forgery attacks
