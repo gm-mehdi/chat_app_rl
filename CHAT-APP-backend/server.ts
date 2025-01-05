@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 dotenv.config();
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Specify the frontend's origin
+    origin: 'https://chat-app-rl.onrender.com', // Specify the frontend's origin
     credentials: true,   
                // Allow cookies and authentication headers
 }));

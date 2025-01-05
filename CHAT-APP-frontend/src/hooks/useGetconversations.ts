@@ -10,7 +10,7 @@ const useGetConversations = () => {
 			setLoading(true);
 			try {
                 // auth cookie
-				const res = await fetch("http://localhost:8000/api/users", {
+				const res = await fetch("https://chat-app-rl.onrender.com/api/users", {
                     method: "GET",
                     credentials: "include",
                 });
