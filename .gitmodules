@@ -1,0 +1,6 @@
+[submodule "CHAT-APP-backend"]
+	path = CHAT-APP-backend
+	url = https://github.com/gm-mehdi/CHAT-APP-backend
+[submodule "CHAT-APP-frontend"]
+	path = CHAT-APP-frontend
+	url = https://github.com/gm-mehdi/CHAT-APP-frontend
